@@ -33,7 +33,8 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="text-white flex h-screen justify-center items-center">
+      <div>
       <h1>Login to admin dashboard</h1>
       <br />
       Username - <input type="text" onChange={(e) => setUsername(e.target.value)} />
@@ -45,6 +46,7 @@ function Login() {
       <button onClick={handleLogin}>Login</button>
       <br />
       New here? <a href="/register">Register</a>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 // import "./header.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import AppBar from '@mui/material/AppBar';
+import Button from "@mui/material/Button";
+import AppBar from "@mui/material/AppBar";
 import axios from "axios";
 
 function Header() {
@@ -19,48 +20,60 @@ function Header() {
       });
   }, []);
   return (
-   <AppBar> 
-    <nav className=" flex flex-row" >
-      <div className="header w-16 ">
-        <img
-          src="https://images-platform.99static.com//6P4kTTYuYEu_XAoU0zZcZZZbElU=/652x656:1393x1397/fit-in/500x500/99designs-contests-attachments/112/112176/attachment_112176840"
-          alt="logo"
-          className=" "
-        />
+    <AppBar className="bg-transparent mb-200" style={{ background: 'transparent', boxShadow: 'none', position: 'fixed', width: '100%', zIndex: 999 }}>
+      <div className="h-20">
+      <nav className=" flex justify-between items-center ">
+        <div className="flex w-16 ">
+          {/* <img
+            src="https://images.neventum.com/logos/2018/70/5aa69b3310d27-dx-y.png"
+            alt="logo"
+            className=""
+          /> */}
+          <p className=" my-4 ml-4 font-bold">Devlearn</p>
         </div>
-<div>
-        <ul className="flex flex-row">
-          <li className="decoration-green-900 text-3xl"> Home </li>
-          <li> About us</li>
-          <li>
-            <Link to="/courses">Courses </Link>
-          </li>
-          <li>Contact</li>
-          {user ? (
-            <div>
-              <button
-                onClick={() => {
-                  localStorage.removeItem("token");
-                  window.location = "/";
-                }}
-              >
-                Logout
-              </button>
-            </div>
-          ) : (
-            <div>
-              {" "}
-              <li>
-                <a href="/login">Login</a>
+        <div className=" font-bold mr-0 ">
+          <ul className="flex flex-row space-x-4  font-bold">
+            <li className=""> Home </li>
+            <li> About us</li>
+            <li>
+              <Link to="/courses">Courses </Link>
+            </li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        {user ? (
+          <div>
+            <button
+              onClick={() => {
+                localStorage.removeItem("token");
+                window.location = "/home";
+              }}
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <div className="px-2">
+            {" "}
+            <ul className="flex ml-auto ">
+              <li className="px-2">
+                <Button variant="contained" className="w-24">
+                  {" "}
+                  <a href="/login">Login</a>{" "}
+                </Button>
               </li>
               <li>
-                <a href="/register">Register</a>
+                <Button variant="contained" className="w-24">
+                  {" "}
+                  <a href="/register">Register</a>{" "}
+                </Button>
               </li>
-            </div>
-          )}
-        </ul>
+            </ul>
+          </div>
+        )}
+      </nav>
       </div>
-    </nav>
     </AppBar>
   );
 }

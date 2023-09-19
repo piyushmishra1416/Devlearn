@@ -1,6 +1,7 @@
 import Admin from "./Admin";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Home from "./Home";
 
 /// This is the landing page. You need to add a link to the login page here.
 /// Maybe also check from the backend if the user is already logged in and then show them a logout button
@@ -23,8 +24,7 @@ function Landing() {
     <div>
         {user ? (<><Admin/> </>
         )
-        : (<div> <h1>Welcome to course selling website!</h1>
-        <p className="text-3xl">hii tailwind check</p></div>)}
+        : (<div><Home/> </div>)}
     
     </div>
   );

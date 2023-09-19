@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -28,7 +28,8 @@ function Signup() {
   };
 
   return (
-    <div>
+    <div className="text-white flex h-screen justify-center items-center">
+      <div>
       <h1>Sign Up for an Account</h1>
       <br />
       Username - <input type="text" onChange={(e) => setUsername(e.target.value)} />
@@ -40,6 +41,7 @@ function Signup() {
       <br />
       <p>{message}</p>
       Already have an account? <a href="/login">Login</a>
+    </div>
     </div>
   );
 }

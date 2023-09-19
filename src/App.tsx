@@ -13,7 +13,7 @@ import Header from "./layouts/Header";
 // You can also try going to /random and see what happens (a route that doesnt exist)
 function App() {
   return (
-    <div className="app">
+    <div className="app " style={{ backgroundColor: "#002333" }}>
       
       <Router>
         <Header />
