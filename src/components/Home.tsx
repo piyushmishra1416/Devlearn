@@ -1,8 +1,13 @@
-import childdev from "../../src/assets/childdev.jpeg";
-import devgirl from "../../src/assets/devgirl.png";
-import devguy from "../../src/assets/devguy.webp";
-import mobileapp from "../../src/assets/mobileapp.webp";
-import music_girl from "../../src/assets/music_girl.jpg";
+// import childdev from "../../src/assets/childdev.jpeg";
+// import devgirl from "../../src/assets/devgirl.png";
+// import devguy from "../../src/assets/devguy.webp";
+// import mobileapp from "../../src/assets/mobileapp.webp";
+// import music_girl from "../../src/assets/music_girl.jpg";
+import skinimage7 from '../assets/skinimage7.webp'
+import skinimage6 from '../assets/skinimage6.jpeg'
+import skinimage3 from '../assets/skinimage3.jpeg'
+import skinimage4 from '../assets/skinimage4.jpeg'
+import skinimage5 from '../assets/skinimage5.jpeg'
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Footer from "../layouts/Footer";
 import Coursecreators from "./Coursecreators";
@@ -16,16 +21,16 @@ function Home() {
       <section className=" flex justify-center">
         <div className="grid grid-cols-3 gap-2">
           <div>
-            <img src={childdev} alt="devchild" className="w-full h-full" />
+            <img src={skinimage5} alt="devchild" className="w-full h-full" />
           </div>
           <div className="">
-            <img src={devgirl} alt="devgirl" className="w-full  h-full" />
+            <img src={skinimage7} alt="devgirl" className="w-full  h-full" />
           </div>
           <div>
-            <img src={devguy} alt="devguy" className="w-full h-full" />
+            <img src={skinimage6} alt="devguy" className="w-full h-full" />
           </div>
           <div>
-            <img src={mobileapp} alt="mobileapp" className="w-full h-full" />
+            <img src={skinimage3} alt="mobileapp" className="w-full h-full" />
           </div>
           <div className="bg-black text-white flex flex-col items-center justify-center ">
             <h1 className="text-4xl mb-4 bold">Welcome to DevLearn</h1>
@@ -38,7 +43,7 @@ function Home() {
           </div>
 
           <div>
-            <img src={music_girl} alt="music_girl" className="w-full h-full" />
+            <img src={skinimage4} alt="music_girl" className="w-full h-full" />
           </div>
         </div>
       </section>
