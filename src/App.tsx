@@ -16,7 +16,7 @@ function App() {
     <div className="app " style={{ backgroundColor: "#002333" }}>
       
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Landing />}>
             <Route path="/courses" index element={<ShowCourses />} />

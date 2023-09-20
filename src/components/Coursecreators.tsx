@@ -1,13 +1,13 @@
-import gameback from "/Users/piyush/Devlearn/src/assets/gameback.jpeg";
+import gameback from "../assets/gameback.jpeg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import iosdeveloper from "/Users/piyush/Devlearn/src/assets/iosdeveloper.jpeg"
-import appdev from "/Users/piyush/Devlearn/src/assets/appdev.jpeg"
-import webdesign from "/Users/piyush/Devlearn/src/assets/webdesign.jpeg"
-import devgame from "/Users/piyush/Devlearn/src/assets/devgame.jpg"
+import iosdeveloper from "../assets/iosdeveloper.jpeg"
+import appdev from "../assets/appdev.jpeg"
+import webdesign from "../assets/webdesign.jpeg"
+import devgame from "../assets/devgame.jpg"
 
 
 function Coursecreators() {
@@ -25,7 +25,7 @@ function Coursecreators() {
     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Adding a subtle box shadow
   }}
 >
-  Empowering Developers, One Skill at a Time
+Why is AI Dermatologist worth using?
 </div>
 
    <div
@@ -55,8 +55,7 @@ function Coursecreators() {
             Lizard
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          AI Dermatologist is created on the basis of artificial intelligence as a result of joint work of IT specialists and doctors. Our app has the Same accuracy as a professional dermatologist
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -75,8 +74,7 @@ function Coursecreators() {
             Lizard
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          You bring the phone to a mole or other formation on the skin, and in 1 minute you will know if there is any reason for concern.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -95,8 +93,7 @@ function Coursecreators() {
             Lizard
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          AI Dermatologist is available anytime, anywhere. Keep your health in check at your fingertips even when you are on the go.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -115,8 +112,7 @@ function Coursecreators() {
             Lizard
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          AI Dermatologist’s leading image analytics features come at an unbeatable price, fit for any request or budget. Flexible pricing plans and customizable bundles will save your practice both time and money.
           </Typography>
         </CardContent>
       </CardActionArea>

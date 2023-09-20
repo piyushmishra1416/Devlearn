@@ -20,7 +20,7 @@ function Header() {
       });
   }, []);
   return (
-    <AppBar className="bg-transparent mb-200" style={{ background: 'transparent', boxShadow: 'none', position: 'fixed', width: '100%', zIndex: 999 }}>
+    <AppBar className="bg-transparent mb-200" style={{ background: '#efc0b6', boxShadow: 'none', position: 'Sticky', width: '100%', zIndex: 999 }}>
       <div className="h-20">
       <nav className=" flex justify-between items-center ">
         <div className="flex w-16 ">
@@ -29,16 +29,16 @@ function Header() {
             alt="logo"
             className=""
           /> */}
-          <p className=" my-4 ml-4 font-bold">Devlearn</p>
+          <p className=" my-4 ml-4 font-bold">SkinSage</p>
         </div>
         <div className=" font-bold mr-0 ">
           <ul className="flex flex-row space-x-4  font-bold">
             <li className=""> Home </li>
-            <li> About us</li>
+            <li> Find A Disease</li>
             <li>
-              <Link to="/courses">Courses </Link>
+              <Link to="/courses"> About Us</Link>
             </li>
-            <li>Contact</li>
+            <li>Why AI Derma?</li>
           </ul>
         </div>
 

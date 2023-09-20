@@ -28,12 +28,12 @@ function Home() {
             <img src={mobileapp} alt="mobileapp" className="w-full h-full" />
           </div>
           <div className="bg-black text-white flex flex-col items-center justify-center ">
-            <h1 className="text-4xl mb-4 bold">Welcome to DevLearn</h1>
+            <h1 className="text-4xl mb-4 bold">Say No To Skin Diseases!</h1>
             <p className="text-lg mb-8 text-center">
-              Your Gateway to Development Excellence
+            Check your skin on the smartphone and get instant results within 1 minute.
             </p>
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Get Started
+              Find A Disease
             </button>
           </div>
 
@@ -45,36 +45,32 @@ function Home() {
       <section className="flex bg-gray-200  ">
         <div className=" w-1/3 p-4 h-1000  flex items-center justify-center">
           <h2 className="text-3xl font-bold mb-4">
-            Why CHOOSE<br></br> DevLearn ?
+          AI Dermatologist <br></br> can save your life
           </h2>
         </div>
         <div className="w-1/2 p-10 flex items-center justify-center">
           <ul className=" pl-4">
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Expert Instructors: Learn from industry professionals with years
-              of experience.
+              More than 2 people die of skin cancer every hour all over the world.
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Comprehensive Curriculum: Dive deep into a wide range of
-              development topics.
+              Melanoma is a skin cancer that can spread earlier and more quickly than other skin cancers.
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Hands-On Learning: Apply your knowledge through practical projects
-              and exercises.
+              Melanoma is the second most common of all cancers in men and women ages 15-29.
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Community Support: Connect with fellow learners and mentors for
-              guidance and collaboration.
+              When detected early, the 5-year survival rate for melanoma is 99 percent
             </li>
           </ul>
         </div>
       </section>
      <Coursecreators />
-     <Creators />
+     {/* <Creators /> */}
     <Footer/>
     </div>
   );
