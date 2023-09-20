@@ -1,22 +1,7 @@
-// import React from 'react'
-
-// function Sidebar() {
-
-
-//   return (
-//     <div>Sidebar</div>
-//   )
-// }
-
-// export default Sidebar
-
-
-import "./Style.css"
-import React from "react";
-
+import "./Style.css";
 
 import { SidebarData } from "./SidebarData.jsx";
-import { Link } from  "react-router-dom"
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
@@ -27,17 +12,16 @@ function SideBar() {
             <li
               key={key}
               className="row"
-              id= {window.location.pathname === val.link ? "active" : ""}
+              id={window.location.pathname === val.link ? "active" : ""}
               onClick={() => {
                 window.location.pathname = val.link;
               }}
             >
-               <Link to = {val.link} />
+              <Link to={val.link} />
               {""}
-              <div id="icon">{val.icon}</div>
+             
               {""}
               <div id="title">{val.title}</div>
-        
             </li>
           );
         })}

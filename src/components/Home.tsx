@@ -7,10 +7,12 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Footer from "../layouts/Footer";
 import Coursecreators from "./Coursecreators";
 import Creators from "./Creators";
+import Header from "../layouts/Header";
 
 function Home() {
   return (
     <div>
+       <Header />
       <section className=" flex justify-center">
         <div className="grid grid-cols-3 gap-2">
           <div>

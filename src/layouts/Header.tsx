@@ -47,7 +47,7 @@ function Header() {
             <button
               onClick={() => {
                 localStorage.removeItem("token");
-                window.location = "/home";
+                window.location = "/";
               }}
             >
               Logout
