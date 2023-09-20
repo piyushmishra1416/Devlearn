@@ -20,25 +20,25 @@ function Header() {
       });
   }, []);
   return (
-    <AppBar className="bg-transparent mb-200" style={{ background: 'transparent', boxShadow: 'none', position: 'fixed', width: '100%', zIndex: 999 }}>
+    <AppBar className="mb-200 " style={{ background: '#E5F1F9', boxShadow: 'none', position: 'sticky', width: '100%', zIndex: 999 }}>
       <div className="h-20">
-      <nav className=" flex justify-between items-center ">
+      <nav className=" flex text-black justify-between items-center ">
         <div className="flex w-16 ">
           {/* <img
             src="https://images.neventum.com/logos/2018/70/5aa69b3310d27-dx-y.png"
             alt="logo"
             className=""
           /> */}
-          <p className=" my-4 ml-4 font-bold">Devlearn</p>
+          <p className=" my-4 ml-8 font-bold">SKINSAGE</p>
         </div>
         <div className=" font-bold mr-0 ">
           <ul className="flex flex-row space-x-4  font-bold">
             <li className=""> Home </li>
-            <li> About us</li>
+            <li> Features</li>
             <li>
-              <Link to="/courses">Courses </Link>
+              <Link to="/courses">Risk Detection </Link>
             </li>
-            <li>Contact</li>
+            <li>Faq</li>
           </ul>
         </div>
 
@@ -58,13 +58,13 @@ function Header() {
             {" "}
             <ul className="flex ml-auto ">
               <li className="px-2">
-                <Button variant="contained" className="w-24">
+                <Button variant="contained" className="w-24" style={{ backgroundColor: '#65C888', color: '#1E3A8A' }}>
                   {" "}
                   <a href="/login">Login</a>{" "}
                 </Button>
               </li>
               <li>
-                <Button variant="contained" className="w-24">
+                <Button variant="contained" className="w-24" style={{ backgroundColor: '#65C888', color: '#1E3A8A' }}>
                   {" "}
                   <a href="/register">Register</a>{" "}
                 </Button>

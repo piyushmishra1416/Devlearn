@@ -5,7 +5,7 @@ import Landing from "./components/Landing";
 import CreateCourse from "./components/CreateCourse";
 import Register from "./components/Register";
 import ShowCourses from "./components/ShowCourses";
-import Header from "./layouts/Header";
+// import Header from "./layouts/Header";
 
 // This file shows how you can do routing in React.
 // Try going to /login, /register, /about, /courses on the website and see how the html changes
@@ -16,7 +16,7 @@ function App() {
     <div className="app " style={{ backgroundColor: "" }}>
       
       <Router>
-       <Header />
+       {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Landing />}>
             <Route path="/courses" index element={<ShowCourses />} />

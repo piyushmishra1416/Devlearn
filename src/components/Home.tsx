@@ -7,21 +7,22 @@ import skinimage7 from '../assets/skinimage7.webp'
 import skinimage6 from '../assets/skinimage6.jpeg'
 import skinimage3 from '../assets/skinimage3.jpeg'
 import skinimage4 from '../assets/skinimage4.jpeg'
-import skinimage5 from '../assets/skinimage5.jpeg'
+import skinimage9 from '../assets/skincancer9.jpeg'
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Footer from "../layouts/Footer";
 import Coursecreators from "./Coursecreators";
 import Creators from "./Creators";
 import Header from "../layouts/Header";
+import Howuse from './Howuse'
 
 function Home() {
   return (
     <div>
        <Header />
       <section className=" flex justify-center">
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-">
           <div>
-            <img src={skinimage5} alt="devchild" className="w-full h-full" />
+            <img src={skinimage9} alt="devchild" className="w-full h-full" />
           </div>
           <div className="">
             <img src={skinimage7} alt="devgirl" className="w-full  h-full" />
@@ -30,27 +31,27 @@ function Home() {
             <img src={skinimage6} alt="devguy" className="w-full h-full" />
           </div>
           <div>
-            <img src={skinimage3} alt="mobileapp" className="w-full h-full" />
+            <img src={skinimage3} alt="mobileapp" className="w-full h-96" />
           </div>
-          <div className="bg-black text-white flex flex-col items-center justify-center ">
-            <h1 className="text-4xl mb-4 bold">Welcome to DevLearn</h1>
+          <div className="bg-black text-white flex flex-col items-center justify-center h-96 ">
+            <h1 className="text-4xl mb-4 bold">Say No To Skin Diseases!</h1>
             <p className="text-lg mb-8 text-center">
-              Your Gateway to Development Excellence
+              Check your skin on the smartphone and get instant results within 1 minute.
             </p>
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Get Started
+              Diagnose the Skin Disease
             </button>
           </div>
 
           <div>
-            <img src={skinimage4} alt="music_girl" className="w-full h-full" />
+            <img src={skinimage4} alt="music_girl" className="w-full h-96" />
           </div>
         </div>
       </section>
-      <section className="flex bg-gray-200  ">
+      <section className="flex mt-10  ">
         <div className=" w-1/3 p-4 h-1000  flex items-center justify-center">
           <h2 className="text-3xl font-bold mb-4">
-            Why CHOOSE<br></br> DevLearn ?
+          What do you know <br></br>in 1 minute?
           </h2>
         </div>
         <div className="w-1/2 p-10 flex items-center justify-center">
@@ -79,6 +80,7 @@ function Home() {
         </div>
       </section>
      <Coursecreators />
+     <Howuse />
      <Creators />
     <Footer/>
     </div>

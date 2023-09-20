@@ -22,47 +22,35 @@ function Footer() {
 
      </div>
    </div>
-   <div className="flex  mt-14 px-28">
-     <div className="w-1/4 ml-14">
-       <ul className="text-lg  ">
-         <li className="mb-2 font-bold">DEVlearn</li>
-         <li>About</li>
-         <li>Careers</li>
-         <li>Blogs</li>
-         <li>Affiliates</li>
-       </ul>
-     </div>
-     <div className="w-1/4">
-       <ul className="text-lg ">
-         <li className="mb-2 font-bold">Community</li>
-         <li>Discord Server</li>
-         <li>Future Plans</li>
-         <li>Memberships</li>
-         <li>Scholarships</li>
-       </ul>
-     </div>
-     <div className="w-1/4">
-       <ul className="text-lg ">
-         <li className="mb-2 font-bold">Support</li>
-         <li>Product Help</li>
-         <li>Raise an Issue</li>
-         <li>Advertise with us</li>
-         <li>Affiliates</li>
-       </ul>
-     </div>
-     <div className="w-1/4">
-       <ul className="text-lg ">
-         <li className="mb-2 font-bold">GAME designs</li>
-         <li>Technology</li>
-         <li>Web Development</li>
-         <li>Android Development</li>
-         <li>IOS Development</li>
-       </ul>
-     </div>
+   <div className="flex mt-14 px-28">
+  <div className="w-1/2">
+    <h2 className="font-bold  text-2xl">SKINSAGE</h2>
+  </div>
+  <div className="w-1/4 ml-14">
+    <ul className="text-lg">
+      <li className="mb-2 font-bold">SKINSAGE</li>
+      <li>About</li>
+      <li>Careers</li>
+      <li>Blogs</li>
+      <li>Affiliates</li>
+    </ul>
+  </div>
+  <div className="w-1/4">
+    <ul className="text-lg">
+      <li className="mb-2 font-bold">Support</li>
+      <li>Product Help</li>
+      <li>Raise an Issue</li>
+      <li>Advertise with us</li>
+      <li>Affiliates</li>
+    </ul>
+  
+</div>
+
+    
    </div>
    <hr className="mt-10 mx-auto border-white w-3/4 mb-4" />
       <div className="flex ml-40  mb-10">
-        <p className="text-sm mr-2">© DevLearn, Inc. </p>
+        <p className="text-sm mr-2">© Skinsage, Inc. </p>
         <a href="#" className="text-sm mx-2">Help</a>
         <a href="#" className="text-sm mx-2">Privacy Terms</a>
       </div>

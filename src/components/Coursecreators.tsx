@@ -1,130 +1,44 @@
-import gameback from "/Users/piyush/Devlearn/src/assets/gameback.jpeg";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-import iosdeveloper from "/Users/piyush/Devlearn/src/assets/iosdeveloper.jpeg"
-import appdev from "/Users/piyush/Devlearn/src/assets/appdev.jpeg"
-import webdesign from "/Users/piyush/Devlearn/src/assets/webdesign.jpeg"
-import devgame from "/Users/piyush/Devlearn/src/assets/devgame.jpg"
+import smart from "../assets/aiwhy/smart.avif"
+import simple from "../assets/aiwhy/simple.jpeg"
+import access from "../assets/aiwhy/access.png"
+import afford from "../assets/aiwhy/afford.jpeg"
+
+
 
 
 function Coursecreators() {
-
   return (
-   <div style={{ position: 'relative' }}>
-   <img src={gameback} alt="background" style={{ width: '100%' }} />
-   <div className="text-2xl font-bold font-serif  py-2 px-4 rounded-full"
-  style={{
-    position: 'absolute',
-    top: '8%',
-    left: '50%',  // Center horizontally
-    transform: 'translateX(-50%)', // Adjust horizontally
-    zIndex: 1,
-    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Adding a subtle box shadow
-  }}
->
-  Empowering Developers, One Skill at a Time
-</div>
+   <div className="">
 
-   <div
-     style={{
-       position: 'absolute',
-       top: '50%',
-       left: '50%',
-       transform: 'translate(-50%, -50%)',
-       display: 'flex',
-       gap: '16px',
-       maxWidth: '1200px',
-       width: '100%'
-     }}
-   >
-      <div className="flex space-x-4 mt-24">
-         <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="100"
-          image={devgame}
-          alt="green iguana"
-          className="h-80"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-         <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image ={iosdeveloper}
-          alt="green iguana"
-          className="h-80"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-         <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={webdesign}
-          alt="green iguana"
-          className="h-80"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-         <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={appdev}
-          alt="green iguana"
-          className="h-80"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </div>    
-      </div>
-    </div>
-  );
+   <h2 className="flex justify-center text-3xl mt-10 font-bold ">Why SKINSAGE is worth using?</h2>
+   <div className="flex justify-center items-centre mx-20">
+   <div className="grid grid-cols-4 gap-4 mt-20">
+     <div className=" flex flex-col bg-amber-100 hover:bg-orange-300 p-3 rounded">
+       <img src={smart} className="w-20 h-20 mb-5 rounded-full" alt="Smart Icon" />
+       <p className="font-bold">Smart</p>
+       <p>AI Dermatologist is created on the basis of artificial intelligence as a result of joint work of IT specialists and doctors. Our app has the same accuracy as a professional dermatologist upon which you can rely on.</p>
+     </div>
+     <div className="flex flex-col bg-amber-100 hover:bg-orange-300 p-3 rounded "> 
+       <img src={simple} className="w-20  h-20 mb-5 rounded-full" alt="Simple Icon" />
+       <p className="font-bold">Simple</p>
+       <p>You bring the phone to a mole, and in 1 minute you will know if there is any reason for concern.
+This innovative technology provides a quick way to monitor skin health, offering peace of mind with timely and accurate information.</p>
+     </div>
+     <div className="flex flex-col p-3   bg-amber-100 hover:bg-orange-300 rounded">
+       <img src={afford} className="w-20  h-20 mb-5 rounded-full" alt="Affordable Icon" />
+       <p className="font-bold">Affordable</p>
+       <p>AI Dermatologist’s leading image analytics features come at an unbeatable price, fit for any request or budget. Flexible pricing plans and customizable bundles will save your practice both time and money.</p>
+     </div>
+     <div className="flex flex-col p-3  bg-amber-100 hover:bg-orange-300 rounded">
+       <img src={access} className="w-20 h-20 mb-5 rounded-full " alt="Accessible Icon" />
+       <p className="font-bold">Accessible</p>
+       <p>AI Dermatologist is created on the basis of artificial intelligence as a result of joint work of IT specialists and doctors. Our app has the same accuracy as a professional dermatologist.</p>
+     </div>
+     </div>
+   </div>
+ </div>
+ 
+  )
 }
 
-export default Coursecreators;
+export default Coursecreators
