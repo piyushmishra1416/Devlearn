@@ -1,13 +1,13 @@
-import gameback from "/Users/piyush/Devlearn/src/assets/gameback.jpeg";
+import gameback from "../assets/gameback.jpeg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import iosdeveloper from "/Users/piyush/Devlearn/src/assets/iosdeveloper.jpeg"
-import appdev from "/Users/piyush/Devlearn/src/assets/appdev.jpeg"
-import webdesign from "/Users/piyush/Devlearn/src/assets/webdesign.jpeg"
-import devgame from "/Users/piyush/Devlearn/src/assets/devgame.jpg"
+import iosdeveloper from "../assets/iosdeveloper.jpeg"
+import appdev from "../assets/appdev.jpeg"
+import webdesign from "../assets/webdesign.jpeg"
+import devgame from "../assets/devgame.jpg"
 
 
 function Coursecreators() {
