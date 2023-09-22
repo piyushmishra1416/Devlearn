@@ -33,48 +33,48 @@ function Home() {
           <div>
             <img src={skinimage3} alt="mobileapp" className="w-full h-96" />
           </div>
-          <div className="bg-black text-white flex flex-col items-center justify-center h-96 ">
-            <h1 className="text-4xl mb-4 bold">Say No To Skin Diseases!</h1>
-            <p className="text-lg mb-8 text-center">
-              Check your skin on the smartphone and get instant results within 1 minute.
-            </p>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Diagnose the Skin Disease
-            </button>
-          </div>
+          <div className="bg-pink-100 text-black flex flex-col items-center justify-center h-96" style={{ background: '#F0F4F8' }}>
+  <h1 className="text-4xl mb-4 font-bold px-2">Say No To Skin Diseases!</h1>
+  <hr className="border-b-2 border-pink-500 w-16 mb-4" />
+  <p className=" mb-2 text-center px-16 text-slate-400">
+    Check your skin on the smartphone and get instant results within 1 minute.
+  </p>
+  <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+    Diagnose the Skin Disease
+  </button>
+</div>
+
+
 
           <div>
             <img src={skinimage4} alt="music_girl" className="w-full h-96" />
           </div>
         </div>
       </section>
-      <section className="flex mt-10  ">
-        <div className=" w-1/3 p-4 h-1000  flex items-center justify-center">
+      <section className="flex justify-center mt-10  ">
+        <div className="  p-4 h-1000  flex items-center justify-center">
           <h2 className="text-3xl font-bold mb-4">
           What do you know <br></br>in 1 minute?
           </h2>
         </div>
-        <div className="w-1/2 p-10 flex items-center justify-center">
+        <div className=" p-10 flex items-center justify-center">
           <ul className=" pl-4">
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Expert Instructors: Learn from industry professionals with years
-              of experience.
+              Skin cancer ((melanoma, BKK, BCC, etc.))
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Comprehensive Curriculum: Dive deep into a wide range of
-              development topics.
+              Benign formation (moles, angeoma, dermatofibroma, etc.)
+
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Hands-On Learning: Apply your knowledge through practical projects
-              and exercises.
+              Papilloma virus (warts, papillomas, mollusks, etc.)
             </li>
             <li className="mb-2">
               <CheckCircleIcon color="success" className=" mr-2" />
-              Community Support: Connect with fellow learners and mentors for
-              guidance and collaboration.
+              Acne Types
             </li>
           </ul>
         </div>
