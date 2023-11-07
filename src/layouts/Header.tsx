@@ -5,7 +5,11 @@ import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
 import axios from "axios";
 
-function Header() {
+interface HeaderProps {
+  isLoggedIn: boolean;
+}
+
+function Header({ isLoggedIn}: HeaderProps) {
   const [user, setUser] = useState("");
   useEffect(() => {
     axios
@@ -18,9 +22,9 @@ function Header() {
         setUser(res.data.username);
         console.log("hello");
       });
-  }, []);
+  }, [isLoggedIn]);
   return (
-    <AppBar className="bg-transparent mb-200" style={{ background: 'transparent', boxShadow: 'none', position: 'fixed', width: '100%', zIndex: 999 }}>
+    <AppBar className=" mb-200 " style={{ background: 'transparent', boxShadow: 'none', width: '100%', zIndex: 999 }}>
       <div className="h-20">
       <nav className=" flex justify-between items-center ">
         <div className="flex w-16 ">

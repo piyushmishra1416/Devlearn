@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
 
-function Login() {
+function Login({ onLogin } ) {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
   const navigate = useNavigate();
@@ -22,7 +22,8 @@ function Login() {
         // You can handle the successful login here, like storing the token in state or localStorage.
         console.log("Login successful:", data);
         localStorage.setItem("token", data.token);
-        navigate("/");
+        onLogin();
+        navigate("/admin");
       } else {
         // Handle login error here
         console.error("Login failed");
