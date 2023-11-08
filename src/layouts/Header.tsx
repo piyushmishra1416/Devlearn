@@ -1,5 +1,5 @@
 // import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
@@ -9,6 +9,7 @@ interface HeaderProps {
   isLoggedIn: boolean;
 }
 
+const navigate = useNavigate();
 function Header({ isLoggedIn}: HeaderProps) {
   const [user, setUser] = useState("");
   useEffect(() => {
@@ -24,7 +25,7 @@ function Header({ isLoggedIn}: HeaderProps) {
       });
   }, [isLoggedIn]);
   return (
-    <AppBar className=" mb-200 " style={{ background: 'transparent', boxShadow: 'none', width: '100%', zIndex: 999 }}>
+    <AppBar className=" mb-200 " style={{ background: 'transparent', boxShadow: 'none', position: isLoggedIn ? 'relative': 'fixed', width: '100%', zIndex: 999 }}>
       <div className="h-20">
       <nav className=" flex justify-between items-center ">
         <div className="flex w-16 ">
@@ -51,7 +52,7 @@ function Header({ isLoggedIn}: HeaderProps) {
             <button
               onClick={() => {
                 localStorage.removeItem("token");
-                window.location = "/";
+                navigate('/'); 
               }}
             >
               Logout

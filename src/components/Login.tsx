@@ -1,7 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
+import PropTypes from "prop-types";
+interface LoginProps {
+  onLogin: () => void; // Define onLogin prop as a function that returns void
+}
 
-function Login({ onLogin } ) {
+function Login({ onLogin }: LoginProps) {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
   const navigate = useNavigate();
@@ -51,5 +55,8 @@ function Login({ onLogin } ) {
     </div>
   );
 }
+Login.propTypes = {
+  onLogin: PropTypes.func.isRequired, // Define onLogin as a required function prop
+};
 
 export default Login;

@@ -4,7 +4,6 @@ import Login from "./components/Login";
 import Landing from "./components/Landing";
 import CreateCourse from "./components/CreateCourse";
 import Register from "./components/Register";
-import ShowCourses from "./components/ShowCourses";
 import Header from "./layouts/Header";
 import Admin from "./components/Admin";
 import { useState } from "react";

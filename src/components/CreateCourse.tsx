@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 function CreateCourse() {
   const [title, setTitle] = useState("");
@@ -49,7 +49,7 @@ function CreateCourse() {
       <div>
         <label>Description:</label>
         <textarea
-          rows="4"
+        
           onChange={(e) => setDescription(e.target.value)}
           value={description}
         />
