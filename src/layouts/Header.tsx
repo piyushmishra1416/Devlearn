@@ -9,7 +9,7 @@ interface HeaderProps {
   isLoggedIn: boolean;
 }
 
-const navigate = useNavigate();
+
 function Header({ isLoggedIn}: HeaderProps) {
   const [user, setUser] = useState("");
   useEffect(() => {
@@ -24,6 +24,7 @@ function Header({ isLoggedIn}: HeaderProps) {
         console.log("hello");
       });
   }, [isLoggedIn]);
+  const navigate = useNavigate();
   return (
     <AppBar className=" mb-200 " style={{ background: 'transparent', boxShadow: 'none', position: isLoggedIn ? 'relative': 'fixed', width: '100%', zIndex: 999 }}>
       <div className="h-20">

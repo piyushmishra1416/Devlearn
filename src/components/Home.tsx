@@ -42,7 +42,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col md:flex-row bg-gray-200">
+      <section className="flex flex-col md:flex-row bg-white text-black">
   <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
       Why CHOOSE DevLearn ?
