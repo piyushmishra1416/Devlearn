@@ -10,8 +10,9 @@ interface HeaderProps {
 }
 
 
-function Header({ isLoggedIn}: HeaderProps) {
+function Header({ }: HeaderProps) {
   const [user, setUser] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     axios
       .get("http://localhost:3000/me", {
@@ -21,12 +22,14 @@ function Header({ isLoggedIn}: HeaderProps) {
       })
       .then((res) => {
         setUser(res.data.username);
+       setIsLoggedIn(true);
         console.log("hello");
       });
-  }, [isLoggedIn]);
+    
+  }, );
   const navigate = useNavigate();
   return (
-    <AppBar className=" mb-200 " style={{ background: 'transparent', boxShadow: 'none', position: isLoggedIn ? 'relative': 'fixed', width: '100%', zIndex: 999 }}>
+    <AppBar className=" mb-200 " style={{ background:isLoggedIn ? 'black': 'transparent', boxShadow: 'none', position: isLoggedIn ? 'relative': 'fixed', width: '100%', zIndex: 999 }}>
       <div className="h-20">
       <nav className=" flex justify-between items-center ">
         <div className="flex w-16 ">
@@ -54,10 +57,13 @@ function Header({ isLoggedIn}: HeaderProps) {
               onClick={() => {
                 localStorage.removeItem("token");
                 navigate('/'); 
+                setIsLoggedIn(false);
+                window.location.reload(); 
               }}
             >
               Logout
             </button>
+           
           </div>
         ) : (
           <div className="px-2">

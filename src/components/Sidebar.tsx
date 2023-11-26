@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
-    <nav className="sidebar">
+    <nav className="sidebar pt-4">
       <ul className="SidebarList">
         {SidebarData.map((val, key) => {
           return (
