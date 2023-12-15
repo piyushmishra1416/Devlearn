@@ -1,4 +1,4 @@
-import gameback from "../assets/gameback.jpeg";
+// import gameback from "../assets/gameback.jpeg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -8,35 +8,28 @@ import iosdeveloper from "../assets/iosdeveloper.jpeg";
 import appdev from "../assets/appdev.jpeg";
 import webdesign from "../assets/webdesign.jpeg";
 import devgame from "../assets/devgame.jpg";
+import "../css/samplecourse.css"
 
-function Coursecreators() {
+function Samplecourse() {
   return (
-    <div style={{ position: "relative" }}>
-      <img src={gameback} alt="background" style={{ width: "100%" }} />
+    <div className="sampleback">
+
       <div
         className="text-3xl font-bold font-serif  py-2 rounded-full"
-        style={{
-          position: "absolute",
-          top: "8%",
-          left: "50%", // Center horizontally
-          transform: "translateX(-50%)", // Adjust horizontally
-          zIndex: 1,
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Adding a subtle box shadow
-        }}
       >
         Empowering Developers, One Skill at a Time
       </div>
 
       <div
         style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          display: "flex",
-          gap: "16px",
-          maxWidth: "1200px",
-          width: "100%",
+          // position: "absolute",
+          // top: "50%",
+          // left: "50%",
+          // transform: "translate(-50%, -50%)",
+          // display: "flex",
+          // gap: "16px",
+          // maxWidth: "1200px",
+          // width: "100%",
         }}
       >
         <div className="flex space-x-4 mt-24">
@@ -126,4 +119,4 @@ function Coursecreators() {
   );
 }
 
-export default Coursecreators;
+export default Samplecourse;

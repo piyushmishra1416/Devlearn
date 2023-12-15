@@ -5,8 +5,8 @@ import mobileapp from "../../src/assets/mobileapp.webp";
 import music_girl from "../../src/assets/music_girl.jpg";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Footer from "../layouts/Footer";
-import Coursecreators from "./Coursecreators";
-import Creators from "./Creators";
+import Creators from "../components/Creators";
+import Samplecourse from "../components/Samplecourse";
 
 
 function Home() {
@@ -74,7 +74,7 @@ function Home() {
   </div>
 </section>
 
-     <Coursecreators />
+     <Samplecourse />
      <Creators />
     <Footer/>
     </div>

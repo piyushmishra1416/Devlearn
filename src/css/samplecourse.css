@@ -1,0 +1,8 @@
+.sampleback {
+   background-color: rgb(121, 23, 67);
+   background-image: url(../assets/gameback.jpeg);
+   height: 100vh;
+   padding-left: 5%;
+   padding-right: 5%;
+   background-repeat: no-repeat;
+}
