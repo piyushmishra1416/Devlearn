@@ -41,14 +41,27 @@ function Home() {
               className="w-screen md:w-full hidden md:block h-full"
             />
           </div>
-          <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900 text-white flex flex-col w-screen md:w-full items-center justify-center " >
-            <h1 className="text-4xl mb-4 bold">Welcome to DevLearn</h1>
-            <p className="text-lg mb-8 text-center">
-              Your Gateway to Development Excellence
-            </p>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Get Started
-            </button>
+          <div className="text-white flex flex-col w-screen md:w-full items-center justify-center relative">
+            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-75">
+              <source src="src/assets/neonback.mp4" type="video/mp4" />
+            </video>
+            <div className="z-10 text-center font-sans font-bold">
+              <h1 className="text-5xl mb-4 font-bold font-sans">Welcome to DevLearn</h1>
+              <hr className="w-16 border-b-2 border-white mb-8"></hr>
+              <p className="text-3xl mb-8 text-center">
+                Your Gateway to Development Excellence
+              </p>
+              <button
+  className="bg-black hover:bg-black text-white hover:text-[#0af] font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out"
+  style={{
+    boxShadow: '0 0 10px #0af, 0 0 20px #0af, 0 0 30px #0af, 0 0 40px #0af, 0 0 70px #0af, 0 0 80px #0af, 0 0 100px #0af, 0 0 150px #0af',
+  }}
+>
+  Get Started
+</button>
+
+
+            </div>
           </div>
 
           <div>
