@@ -4,6 +4,7 @@ import devguy from "../../src/assets/devguy.webp";
 import mobileapp from "../../src/assets/mobileapp.webp";
 import music_girl from "../../src/assets/music_girl.jpg";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import neonback from "../assets/neonback.mp4"
 import Footer from "../layouts/Footer";
 import Creators from "../components/Creators";
 import Samplecourse from "../components/Samplecourse";
@@ -43,7 +44,7 @@ function Home() {
           </div>
           <div className="text-white flex flex-col w-screen md:w-full items-center justify-center relative">
             <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-75">
-              <source src="src/assets/neonback.mp4" type="video/mp4" />
+              <source src={neonback} type="video/mp4" />
             </video>
             <div className="z-10 text-center font-sans font-bold">
               <h1 className="text-5xl mb-4 font-bold font-sans">Welcome to DevLearn</h1>
