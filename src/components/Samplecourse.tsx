@@ -1,4 +1,3 @@
-// import gameback from "../assets/gameback.jpeg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -12,10 +11,10 @@ import "../css/samplecourse.css"
 
 function Samplecourse() {
   return (
-    <div className="sampleback">
+    <div className="sampleback h-[100%]">
 
       <div
-        className="text-3xl font-bold font-serif  py-2 rounded-full"
+        className="text-3xl font-bold text-stone-400 font-serif text-center py-4 rounded-full"
       >
         Empowering Developers, One Skill at a Time
       </div>
@@ -32,8 +31,9 @@ function Samplecourse() {
           // width: "100%",
         }}
       >
-        <div className="flex space-x-4 mt-24">
-          <Card sx={{ maxWidth: 345 }}>
+        <div className="flex flex-col md:flex-row space-x-4 space-y-3 md:space-y-0 pb-4 mt- pt-4">
+          <Card sx={{ maxWidth: 345 ,
+      width: ['100%', null, '25%'] }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -55,7 +55,8 @@ function Samplecourse() {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345,
+      width: ['100%', null, '25%'] }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -74,7 +75,8 @@ function Samplecourse() {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345,
+      width: ['100%', null, '25%'] }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -93,7 +95,8 @@ function Samplecourse() {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345,
+      width: ['100%', null, '25%'] }}>
             <CardActionArea>
               <CardMedia
                 component="img"

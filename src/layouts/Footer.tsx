@@ -22,7 +22,7 @@ function Footer() {
 
      </div>
    </div>
-   <div className="flex  mt-14 px-28">
+   <div className="md:flex hidden mt-14 px-28">
      <div className="w-1/4 ml-14">
        <ul className="text-lg  ">
          <li className="mb-2 font-bold">DEVlearn</li>
@@ -61,7 +61,7 @@ function Footer() {
      </div>
    </div>
    <hr className="mt-10 mx-auto border-white w-3/4 mb-4" />
-      <div className="flex ml-40  mb-10">
+      <div className="flex pl-[3rem] md:ml-40  mb-10">
         <p className="text-sm mr-2">© DevLearn, Inc. </p>
         <a href="#" className="text-sm mx-2">Help</a>
         <a href="#" className="text-sm mx-2">Privacy Terms</a>
