@@ -13,12 +13,12 @@ function Home() {
   return (
     <div>
       <section className=" flex mt-200 justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-2">
           <div>
             <img
               src={childdev}
               alt="devchild"
-              className="w-screen md:w-full h-full"
+              className="w-screen hidden md:block md:w-full h-full"
             />
           </div>
           <div className="">
@@ -46,7 +46,7 @@ function Home() {
             <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-75">
               <source src={neonback} type="video/mp4" />
             </video>
-            <div className="z-10 text-center font-sans font-bold">
+            <div className="z-10 text-center font-sans p-8 mt-4 font-bold">
               <h1 className="text-5xl mb-4 font-bold font-sans">Welcome to DevLearn</h1>
               <hr className="w-16 border-b-2 border-white mb-8"></hr>
               <p className="text-3xl mb-8 text-center">
@@ -69,7 +69,7 @@ function Home() {
             <img
               src={music_girl}
               alt="music_girl"
-              className="w-screen md:w-full h-full"
+              className="w-screen  hidden md:block md:w-full h-full"
             />
           </div>
         </div>

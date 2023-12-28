@@ -1,11 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
-import PropTypes from "prop-types";
-interface LoginProps {
-  onLogin: () => void; // Define onLogin prop as a function that returns void
-}
 
-function Login({ onLogin }: LoginProps) {
+
+
+function Login() {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
   const navigate = useNavigate();
@@ -26,7 +24,7 @@ function Login({ onLogin }: LoginProps) {
         // You can handle the successful login here, like storing the token in state or localStorage.
         console.log("Login successful:", data);
         localStorage.setItem("token", data.token);
-        onLogin();
+
         navigate("/admin");
       } else {
         // Handle login error here
@@ -55,8 +53,6 @@ function Login({ onLogin }: LoginProps) {
     </div>
   );
 }
-Login.propTypes = {
-  onLogin: PropTypes.func.isRequired, // Define onLogin as a required function prop
-};
+
 
 export default Login;

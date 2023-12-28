@@ -40,9 +40,9 @@ function CreateCourse() {
   };
 
   return (
-    <div className="create course">
+    <div className="create course bg-black mt-[100px]  text-white">
       {/* <h1>Create Course Page</h1> */}
-      <div>
+      <div className="justify-center items-center">
         <label>Title:</label>
         <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} />
       </div>
