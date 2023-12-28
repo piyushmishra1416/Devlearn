@@ -1,1 +1,0 @@
-{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" }
