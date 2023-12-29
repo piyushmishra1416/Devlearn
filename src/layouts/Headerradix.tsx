@@ -4,6 +4,7 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import baseURL from '../config.js';
 
 
 
@@ -11,7 +12,7 @@ const NavigationMenuDemo = () => {
    const [user, setUser] = useState("");
    useEffect(() => {
      axios
-       .get("http://localhost:3000/me", {
+       .get(`${baseURL}me`, {
          headers: {
            Authorization: "Bearer " + localStorage.getItem("token"),
          },

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
+import baseURL from '../config.js';
 
 
 
@@ -10,7 +11,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3000/admin/login", {
+      const response = await fetch(`${baseURL}admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

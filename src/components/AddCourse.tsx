@@ -1,4 +1,5 @@
 import  { useState } from "react";
+import baseURL from '../config.js';
 
 function CreateCourse() {
   const [title, setTitle] = useState("");
@@ -16,7 +17,7 @@ function CreateCourse() {
     // You can also send this data to your server for course creation
     // Example fetch request:
    
-    fetch("http://localhost:3000/admin/courses", {
+    fetch(`${baseURL}admin/courses`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

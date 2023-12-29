@@ -2,12 +2,13 @@ import Admin from "../components/Admin";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Home from "./Home";
+import baseURL from '../config.js';
 
 function Landing() {
     const [user, setUser] = useState("");
     useEffect(() => {
         axios
-          .get("http://localhost:3000/me", {
+          .get(`${baseURL}me`, {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
             },

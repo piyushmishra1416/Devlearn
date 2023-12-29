@@ -1,4 +1,5 @@
 import  { useState, useEffect } from "react";
+import baseURL from '../config.js';
 
 interface Course {
   id: number;
@@ -15,7 +16,7 @@ function ShowCourses() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('http://localhost:3000/admin/courses', {
+        const response = await fetch(`${baseURL}admin/courses`, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
             'Content-Type': 'application/json',

@@ -1,4 +1,5 @@
 import  { useState } from "react";
+import baseURL from '../config.js';
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -7,7 +8,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch("http://localhost:3000/admin/signup", {
+      const response = await fetch(`${baseURL}admin/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
