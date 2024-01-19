@@ -8,7 +8,8 @@ import Admin from "./components/Admin";
 // import { useState } from "react";
 import NavigationMenuDemo from "./layouts/Headerradix";
 import Login from "./components/Login";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import TaskPage from "./components/TaskView";
 
 // This file shows how you can do routing in React.
 // Try going to /login, /register, /about, /courses on the website and see how the html changes
@@ -25,9 +26,9 @@ function App() {
           <Route path="/" element={<Landing />}></Route>
           <Route path="/home" element={<Landing />} />
           <Route path="/admin" element={<Admin />} >
-            <Route path="/admin/course" element={<Admin />}/>
+            {/* <Route path="/admin/course" element={<Admin />}/> */}
             <Route path="/admin/addcourse" element={<CreateCourse />}/>
-            <Route path="/admin/course" element={<Home />}/>
+            <Route path="/admin/course" element={<TaskPage />}/>
             </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

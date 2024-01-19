@@ -16,11 +16,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import HomeIcon from '@mui/icons-material/Home';
-//  import HowToRegIcon from '@mui/icons-material/HowToReg';
  import RuleIcon from '@mui/icons-material/Rule';
-//  import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import { Link } from 'react-router-dom';
+
 
 const drawerWidth = 240;
 
